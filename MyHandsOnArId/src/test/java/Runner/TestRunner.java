@@ -8,7 +8,8 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(features = "src/test/resources/features", glue = {"StepDefinitions"} ,
 monochrome = true,
 tags = "@Smoke" ,
-plugin = {"pretty", "json:target/cucumber.json", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"})
+plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
+)
 
 public class TestRunner {
 
